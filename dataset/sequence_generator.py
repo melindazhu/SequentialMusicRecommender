@@ -14,7 +14,7 @@ def get_sample_dataframe(sp_client, recently_played):
             'track_id': track['id'],
             'track_name': track['name'],
             'artist': track['artists'][0]['name'], # just get the main artist
-            'album': track['album']['artists'][0]['name'],
+            'album': track['album']['name'],
             'popularity': track['popularity'],
             'played_at': obj['played_at']
         })
